@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> landing page of travel</title>
+        <style type="text/css">
+            *{padding: 0; margin: 0;box-sizing:border-box;}
+            header{
+                width: 100%;
+                height: 100vh;
+                background: url("Y.jpg");
+                background-size:cover;
+                font-family:sans-serif;
+            }
+            nav{
+                width:100%
+                height:100px;
+                color:white;
+                display:flex;
+                justify-content:space-around;
+                align-items: center;
+            }
+            .logo{
+                font-size: 3em;
+                letter-spacing:2px;
+                color:green;
+                text-align:center;
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position: relative;
+            }
+            .menu a:before{
+                content: '';
+                position: absolute;
+                top:0;
+                left: 0;
+                width:0%;
+                height: 100%;
+                border-bottom: 3px solid rgb(22, 119, 22);
+                transition: 0.6s linear;
+            }
+            .menu a:hover::before{
+                width:80%;
+            }
+            .register a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px; 
+                background: indianred;
+                border-radius: 10px;
+                transition: 0.6s;
+            }
+            .register a:hover{
+                background: transparent;
+                border:2px solid indianred;
+
+            }
+            .h-txt{
+                max-width: 650px;
+                position :absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align:center;
+                color:white;
+            }
+            .h-txt span{
+                letter-spacing:8px;
+                font-size:2em;
+                color:darkolivegreen;
+            }
+            .h-txt H1{
+                font-size:3em;
+                color:white;
+            }
+            .h-txt a{
+                text-decoration: none;
+                background:indianred;
+                border-radius: 6px;
+                color:white;
+                padding: 10px 30px;
+                letter-spacing: 4px;
+                transition: 0.5s;
+            }
+            .h-txt a:hover{
+                background: transparent;
+                border:2px solid indianred;
+            }
+        </style>
+    </head>
+    <body>
+        <header> <br> 
+            <p class="logo">
+                    DREAM TRAVEL-DT
+                </p>
+                <br><br>
+                <nav>
+                <div class="menu">
+                    <a href="#">HOME</a>
+                    <a href="#">RECOMMENDED</a>
+                    <a href="#">BEST OFFERS</a>
+                    <a href="#">EXPLORE NEW</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">HELP</a>
+                </div>
+                <div class="register">
+                    <a href="#">REGISTER</a>
+                </div>
+                </nav>
+                <section class="h-txt">
+                    <span>ENJOY</span>
+                    <H1> DREAM YOUR TRIP </H1>
+                        <H1>PLAN WITH US</H1>
+                        <BR>
+                            <a href="#">Book Your Trip now</a>
+                </section>
+        </header>
+    </body>
+</html>
